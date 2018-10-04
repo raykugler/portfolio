@@ -32,15 +32,15 @@ function bioOn() {
     if (state === 0) {
     document.getElementById("bio").classList.add('bio_show');
     document.getElementById("bio").classList.remove('bio_no_show');
-    document.getElementById('arrow_pointer').classList.add('arrow_turn');
-    document.getElementById('arrow_pointer').classList.remove('arrow');
+    document.getElementById('arrow_straight').classList.add('arrow_turn');
+    document.getElementById('arrow_straight').classList.remove('arrow');
     state = 1
     }
     else{
         document.getElementById("bio").classList.add('bio_no_show');
         document.getElementById("bio").classList.remove('bio_show');
-        document.getElementById('arrow_pointer').classList.add('arrow');
-        document.getElementById('arrow_pointer').classList.remove('arrow_turn');
+        document.getElementById('arrow_straight').classList.add('arrow');
+        document.getElementById('arrow_straight').classList.remove('arrow_turn');
     state = 0;
             
     }
