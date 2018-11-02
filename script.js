@@ -25,6 +25,19 @@ document.getElementById('contact').addEventListener("click", function(){
                 });    
     });
    
+    document.getElementById('uptown_link').addEventListener("click", function(){
+        console.log('yep');
+           
+          window.open("https://uptown-three.herokuapp.com/")
+        });
+        
+
+document.getElementById('clutch_link').addEventListener("click", function(){
+    console.log('yep');
+       
+      window.open("https://clutch-app.herokuapp.com/")
+    });
+    
 }
 
 var state = 0
