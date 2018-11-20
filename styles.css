@@ -159,6 +159,7 @@ html, body {
     margin-right: 5px;
     margin-top: 15px;
     overflow: scroll;
+    line-height: 23px;
 }
 .linked_link{
     grid-column: 3/4;
