@@ -28,7 +28,7 @@ html, body {
     grid-row: 1/2;
     margin-bottom: 2px;
     align-self: center;
-    margin-top: -40px;
+  
 }
 
 .big_nameui{
@@ -56,13 +56,13 @@ html, body {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
 }
-.front_end_title{
+.front_end_title {
     font-family: 'Quicksand', sans-serif;
     color: rgb(46, 46, 46);
     font-size: .82em;
     grid-column: 1/6;
     grid-row: 2/3;
-    margin-top: -4px;
+    margin-top: -15px;
 }
 .socme_icon{
     padding: 5px;
@@ -917,6 +917,9 @@ html, body {
         padding:0;
         background-color:#efefef;
     }
+    .front_end_title {
+        margin-top: -3px;
+    }
     .socme_holder{
         grid-row: 5/6;
         grid-template-rows: 1fr;
@@ -1509,6 +1512,10 @@ html, body {
         text-align: center;
         line-height: 60px;
     
+    }
+    .front_end_title {
+        grid-row: 2/3;
+        margin-top: -2px;
     }
     .ui_logo{
         grid-row: 2/3;
