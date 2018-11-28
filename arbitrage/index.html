@@ -1,0 +1,163 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Arbitrage</title>
+<link rel="stylesheet" href="stock2.css" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+</head>
+<body>
+<div class="container box">
+
+  <div class="banner box">
+    <h2 class="head">Arbitrage: Pairs Trading</h2>
+    <p class='arb_description'>Compares historical data of two stocks in the 
+      same industry to find the average difference in price and the 
+      standard deviation from that average. Then provides buy or short-sell 
+      advice for when the price range moves beyond the standard deviation.</p>
+
+
+    
+      <div class='white_back'></div>
+      <section id="examples">
+     
+        <h2 class='example_text'>Examples:  </h2>
+
+        <button action="/stock.js" id="delta" class="exbuttons excell" onclick="delta()" type="submit">
+        Southwest and Delta </button>
+          <button action="/stock.js" id="lowesbt" class="exbuttons excell" onclick="lowes()" type="submit">
+            HomeDepot and Lowes</button>
+        <button action="/stock.js" id="applebt" class="exbuttons excell" onclick="apple()" type="submit">
+          Microsoft and Apple</button>
+        <button action="/stock.js" id="walbt" class="exbuttons excell" onclick="walmart()" type="submit">
+          Walmart and Target</button>
+      <button action="/stock.js" id="fordbt" class="exbuttons excell" onclick="ford()" type="submit">  
+        Ford and GM</button>
+</section>
+      </div>
+      <div class="search" id='search'>
+
+
+        <input type="text" id="wind" autocomplete="off" >
+      <input type="image" id="searchicon" src="ic_search_black_48dp.png" >
+    
+    </div>
+
+    <div id="searchresults">
+      <div id="instructions">
+        <div class='line_box first_set'>
+          <div class='top_line wide'> </div>
+          <i class='up_arrow top_line'></i>
+          <i class='second_up_arrow top_line'></i>
+          <div class='top_line thin'></div>
+          <div class='main_line top_up'></div>
+          <div class='bottom_line wide'></div>
+          <p id='high_symbol_set'></p>
+          <p id='low_symbol_set'></p>
+          <p class='average_spread'>Average Spread</p>
+          <p id='meanspread'>$$$$$</p>
+          <div class='second_line'></div>
+          <p class='deviation_text'>Standard Deviation</p>
+          <p id='deviationcell'>+/- $$$$$</p> 
+          <i class=' bottom_line down_arrow'></i>
+          <i class=' bottom_line second_down_arrow'></i>
+          <div class='bottom_line thin'></div>
+        </div>
+     <div class='line_box second_set'>
+        <div class='top_line wide'> </div>
+        <i class='centered_up_arrow top_line'></i>
+        <div class='top_line thin'></div>
+        <div class='centered_main_line centered_top_up'></div>
+        <p id='high_symbol'></p>
+        <p id='low_symbol'></p>
+        
+        <div class='bottom_line wide'></div>
+        <p class='high_spread_text'>When spread is more than:</p>
+        <p id='highspread'>$$$$$</p>
+        <i class=' bottom_line centered_down_arrow'></i>
+        <div class='bottom_line thin'></div>
+    </div>
+      <div class='line_box third_set'>
+          <div class='top_line wide'> </div>
+          <i class='less_up_arrow top_line'></i>
+          <div class='top_line thin'></div>
+          <div class='lesser_main_line lesser_top_up'></div>
+        <p id='high_symbol_two'></p>
+        <p id='low_symbol_two'></p>
+          <div class='bottom_line wide'></div>
+          <p class='low_spread_text'>When spread is less than:</p>
+          <p id='lowspread'>$$$$$</p>
+          <i class=' bottom_line less_down_arrow'></i>
+          <div class='bottom_line thin'></div>
+       </div>
+      <!--   <table id="instructiontable">
+          <tr >
+            <td class="leftcell">The average spread is </td>
+<td id="meanspread" class="numbercell"> </td>
+            <td id="sdsent">The standard deviation from this spread is</td>
+            <td id="deviationcell" class="numbercell"></td>
+          </tr>
+          <tr id='spacer'></tr>
+          <tr>
+            <td class="leftcell">When the spread goes above</td>
+            <td id="highspread" class="numbercell">      </td>
+            <td colspan="2" class='textcell'>purchase the lower priced stock and short the higher priced stock</td>
+            <td>            </td>
+          </tr>
+          <tr class="gaprow">          </tr>
+          <tr>
+            <td class="leftcell">When the spread drops below</td>
+            <td id="lowspread" class="numbercell" >      </td>
+            <td colspan="2" class="textcell">purchase the higher priced stock and short the lower priced stock</td>
+            <td>            </td>
+          </tr>
+          <tr class="gaprow">          </tr>
+          <tr>
+            <td>            </td>
+            <td class="leftcell" colspan="2">Close out your positions when the spread falls back to to within </td>
+            <td id="spreadrange" class="numbercell"> </td>
+            <td>            </td>
+
+          </tr>
+        </table>
+      -->
+      </div> 
+  </div>
+ 
+<div id="stockchoices">
+  <table id="choiceTable">
+    <tr>
+      <td id="firststock" class="cell3"> STOCK 1:     </td>
+      <td id="firstcompany" class="cell" colspan="2">       </td>
+      <td id="firstspot" class="cell2" >      </td>
+<td id="currentpriceone" class="closeprice"></td>
+    </tr>
+
+    <tr>
+      <td id="secondstock" class="cell3">STOCK 2:      </td>
+      <td id="secondcompany" class="cell" colspan="2">      </td>      
+      <td id="secondspot"  class="cell2">      </td>
+      <td id="currentpricertwo" class="closeprice"></td>
+    </tr>
+
+    <tr>
+      <td colspan="5" id="buttonCell">
+
+
+<button action="/stock.js" class='btn' id="comparebtn"  type="submit" >Compare</button>
+<button action="/stock.js" class='btn' id="resetbtn"  type="submit" >Reset</button>
+      </td>
+    </tr>
+
+  </table>
+
+</div>
+
+
+</div>
+    <script src="finalstock.js"></script>
+</body>
+</html>
