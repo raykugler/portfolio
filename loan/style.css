@@ -1,0 +1,205 @@
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    background-color: deepskyblue
+}
+.title{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 3em;
+    grid-column: 1/-1;
+    grid-row: 1/2;
+    justify-self: center;
+    align-self: center;
+    color: aliceblue;
+    text-align: center;
+}
+.form{
+    grid-column: 1/-1;
+    grid-row: 2/6;
+    height: 480px;
+    justify-self: center;
+    align-self: start;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;   
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    width: 450px;
+}
+.field{
+    grid-column: 2/-1;
+    width: 160px;
+    height: 40px;
+    align-self: center;
+    justify-self: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1em;
+}
+.field_title{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1em;
+    color: aliceblue;
+    text-align: center;
+    margin-top: -3px;
+    grid-column: 2/-1;
+    font-weight: 500;
+
+}
+
+.check{
+    grid-column: 1/2;
+    height: 20px;
+    width: 20px;
+    margin-top: 35px;
+    justify-self: end;
+    margin-right: -60px;
+}
+.solve_for{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1em;
+    color: aliceblue;
+    text-align: end;
+    margin-top: 33px;
+    grid-column: 1/2;
+    margin-right: -30px;
+    font-weight: 500;
+}
+#principal{
+    grid-row: 1/2;
+}
+#loan_amount_text{
+    grid-row: 1/2;
+}
+#principal_check{
+    grid-row: 1/2;
+}
+.one{
+    grid-row: 1/2;
+}
+#length{
+    grid-row: 2/3;
+}
+#length_text{
+    grid-row: 2/3;
+
+}
+#length_check{
+    grid-row: 2/3;
+}
+.two{
+    grid-row: 2/3;
+}
+#interest_rate{
+    grid-row: 3/4;
+}
+#interest_rate_text{
+    grid-row: 3/4;
+}
+#interest_check{
+    grid-row: 3/4;
+}
+.three{
+    grid-row: 3/4;
+}
+#monthly_payment{
+    grid-row: 4/5;
+
+}
+#monthly_payment_text{
+    grid-row: 4/5;
+}
+#monthly_check{
+    grid-row: 4/5;
+}
+.four{
+    grid-row: 4/5;
+}
+.submit_button{
+    grid-row: 5/6;
+    grid-column: 2/-1;
+    width: 150px;
+    height: 50px;
+    justify-self: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+
+}
+.reset_button{
+    grid-row: 6/7;
+    grid-column: 2/-1;
+    width: 150px;
+    height: 50px;
+    justify-self: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+
+}
+.results{
+    grid-row: 5/8;
+    grid-column: 1/-1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    justify-self: center;
+    align-self: center;
+    margin-left: 60px;
+}
+
+.result_text{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    font-size: 1.2em;
+    color: aliceblue;
+    grid-column: 1/-1;
+
+}
+#principal_result{
+    grid-row: 1/2;
+    grid-column: 2/3;
+    margin-left: 30px;
+}
+#principal_result_text{
+    grid-row: 1/2;
+    grid-column: 1/2;
+    text-align: right;
+}
+#length_result{
+    grid-row: 2/3;
+    grid-column: 2/3;
+    margin-left: 30px;
+}
+#length_result_text{
+    grid-row: 2/3;
+    grid-column: 1/2; 
+    text-align: right;   
+
+}
+#interest_result{
+    grid-row: 3/4;
+    grid-column: 2/3;
+    margin-left: 30px;
+}
+#interest_result_text{
+    grid-row: 3/4;
+    grid-column: 1/2;
+    text-align: right;
+}
+#monthly_result{
+    grid-row: 4/5;
+    grid-column: 2/3;
+    margin-left: 30px;
+}
+#monthly_result_text{
+    grid-row: 4/5;
+    grid-column: 1/2;
+    text-align: right;
+}
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+-webkit-appearance: none;
+margin: 0;
+}
+.quantity::-webkit-inner-spin-button, 
+.quantity::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
