@@ -1592,7 +1592,7 @@ html, body {
         z-index: 0;
     }
     .blue_box_bio{
-        width: 94%;
+        width: 95%;
         height: 300px;
     }
     #ray_bio{
@@ -2098,6 +2098,9 @@ html, body {
 }
 .arrow_turn{
     display: none;
+}
+.blue_box_bio{
+    width: 87%;
 }
 .red_box_bio{
     grid-column: 2/-4;
