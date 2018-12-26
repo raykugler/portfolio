@@ -2100,7 +2100,7 @@ html, body {
     display: none;
 }
 .blue_box_bio{
-    width: 87%;
+    width: 95%;
 }
 .red_box_bio{
     grid-column: 2/-4;
@@ -2657,19 +2657,17 @@ html, body {
 .exp_box{
     height: 200px;
     grid-column: 1/-2;
-    border-top: 6px solid #6bdef7;
-    border-bottom: 6px solid #6bdef7;
-    border-right: 6px solid #6bdef7;
-    margin-left: 7px;
+    border: 6px solid #6bdef7;
+    margin-left: 17px;
     border-radius: 15px;
     margin-top: 45px;
 }
-.small_exp_header{
-    font-family: 'quicksand';
+.small_exp_header {
+    font-family: 'righteous';
     font-size: 3ex;
-    font-weight: bolder;
+    font-weight: bold;
     margin-left: 10px;
-    
+    margin-top: -30px;
 }
 .exp_text{
     font-family: 'quicksand';
@@ -2677,7 +2675,12 @@ html, body {
     font-weight: bolder;
     margin-left: 10px;
 }
-
+.exp_connector{
+        border-bottom: 6px solid #6bdef7;
+        z-index: 4;
+        margin-left: -15px;
+        width: 13px;
+}
 /*font-family: 'Quicksand', sans-serif;
 font-family: 'Righteous', sans-serif;
 #caebf2
