@@ -2479,6 +2479,205 @@ html, body {
 }
 
 }
+.resume_page{
+    height: 100%;
+    width: 100%;
+    background-color: #efefef;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 40px 100px 100px 1fr 100px 1fr 1fr 1fr 1fr 1fr;
+}
+.res_header_holder{
+    grid-row: 2/4;
+    grid-column: 2/-1;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+.res_header{
+    grid-row: 2/3;
+    grid-column: 1/4;
+    justify-self: start;
+    font-family: 'righteous';
+    font-size: 7ex;
+    margin-bottom: 0px;
+    margin-left: 35px;
+}
+.res_header_underline{
+    grid-column: 2/3;
+    grid-row: 1/-1;
+    border-left: 5px solid #6bdef7;
+    margin-left: 18px;
+    height: 100%;
+    z-index: 5;
+}
+.res_big_box{
+    grid-column: 2/3;
+    grid-row: 1/-1;
+    border-left: 15px solid #FF3B3F;
+}
+.res_sub_head{
+    font-family: 'quicksand';
+    grid-row: 3/4;
+    grid-column: 1/4;
+    justify-self: start;
+    font-size: 3ex;
+    margin-top: -5px;
+    margin-left: 38px;
+}
+.knowledge_header {
+    grid-row: 4/5;
+    grid-column: 2/3;
+    justify-self: start;
+    font-family: 'righteous';
+    font-size: 4ex;
+    margin-bottom: 0px;
+    margin-left: 31px;
+    margin-top: 126px;
+    z-index: 2;
+}
+
+.quals{
+    grid-row: 4/5;
+    grid-column: 2/-1;
+    margin-top: 160px;
+    display: flex;
+    flex-wrap: wrap;
+    border: 15px solid #FF3B3F;
+    margin-right: 10px;
+    border-radius: 15px;
+    padding-right: 10px;
+}
+.big_quals_box {
+
+    grid-column: 2/-1;
+    grid-row: 4/5;
+    border: 15px solid #FF3B3F;
+    z-index: 0;
+    margin-top: 50px;
+    margin-left: 0;
+    margin-right: 15px;
+    margin-bottom: 190px;
+
+}
+.qual_box {
+    
+    display: grid;
+   flex-basis: 100%;
+    grid-column: 2/7;
+
+    margin-bottom: 10px;
+    margin-right: -8px;
+    max-width: 420px;
+    margin-top: 50px;
+    margin-left: 18px;
+}
+.list_box{
+    display: flex;  
+    flex-wrap: wrap;
+    border: 6px solid #6bdef7;
+    border-radius: 15px;
+    margin-top: -20px;
+    margin-bottom: 10px;
+    flex-basis: 100%;
+    
+}
+.connector {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    border-bottom: 6px solid #6bdef7;
+    height: 100%;
+    z-index: 4;
+    margin-left: -10px;
+    width: 13px;
+}
+.comfort_box{
+  
+    grid-row: 1/2;
+}
+.familiar_box{
+    grid-row: 3/4;
+}
+.acquainted_box{
+    grid-row: 5/6;
+}
+.passer_box{
+    grid-row: 7/8;
+}
+.qual_list_one{
+    /* grid-column: 1/2;
+    grid-row: 1/-1;
+    margin-top: 9px; */
+    list-style: none;
+    font-family: 'quicksand';
+    /* margin-bottom: -18px; */
+    /* width: 140px; */
+    padding-left: 20px;
+}
+.qual_list_two{
+    list-style: none;
+    /* grid-row: 1/-1;
+    margin-top: 9px;
+    grid-column: 2/3; */
+    font-family: 'quicksand';
+    margin-right: 15px;
+    padding-left: 20px;
+
+    /* width: 140px; */
+}
+.qual_header{
+    font-family: 'righteous';
+    grid-row: 1/2;
+    grid-column: 1/-1;
+    margin-top: -28px;
+
+}
+.exp_header {
+    grid-row: 6/7;
+    grid-column: 2/3;
+    justify-self: start;
+    font-family: 'righteous';
+    font-size: 4ex;
+    margin-bottom: 0px;
+    margin-left: 31px;
+    margin-top: 16px;
+    z-index: 2;
+}
+.res_exp {
+    grid-row: 6/7;
+    grid-column: 2/-1;
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    border: 15px solid #FF3B3F;
+    margin-right: 10px;
+    border-radius: 15px;
+}
+.exp_box{
+    height: 200px;
+    grid-column: 1/-2;
+    border-top: 6px solid #6bdef7;
+    border-bottom: 6px solid #6bdef7;
+    border-right: 6px solid #6bdef7;
+    margin-left: 7px;
+    border-radius: 15px;
+    margin-top: 45px;
+}
+.small_exp_header{
+    font-family: 'quicksand';
+    font-size: 3ex;
+    font-weight: bolder;
+    margin-left: 10px;
+    
+}
+.exp_text{
+    font-family: 'quicksand';
+    font-size: 2ex;
+    font-weight: bolder;
+    margin-left: 10px;
+}
+
 /*font-family: 'Quicksand', sans-serif;
 font-family: 'Righteous', sans-serif;
 #caebf2
