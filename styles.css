@@ -167,10 +167,24 @@ html, body {
     font-family: 'Quicksand', sans-serif;
     color: rgb(46, 46, 46);
     font-size: .92em;
-    border-top: 2px solid #FF3B3F;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
+    margin-left: 5px;
+}
+.github_holder_top{
+    padding: 0;
+
+margin-top: 3px;
+    grid-column: 3/4;
+    grid-row: 1/-1;
+    font-family: 'Quicksand', sans-serif;
+    color: rgb(46, 46, 46);
+    font-size: .92em;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    margin-left: 5px;
 }
 .resume_on{
     font-family: 'Quicksand', sans-serif;
@@ -274,9 +288,10 @@ html, body {
     grid-row: 7/9;
     grid-column: 1/-1;
     justify-self: center;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
+    display: flex;
+    flex-wrap: nowrap;
+    /* grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr; */
 }
 .socme_holder_two{
     grid-row: 7/9;
@@ -292,6 +307,7 @@ html, body {
     justify-self: center;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    margin-left: 5px;
 }
 .github_holder{
     grid-column: 4/5;
@@ -299,6 +315,7 @@ html, body {
     justify-self: center;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    margin-left: 5px;
 }
 .twitter_holder{
     grid-column: 2/3;
@@ -306,6 +323,7 @@ html, body {
     justify-self: center;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    margin-left: 5px;
 }
 .instagram_icon{
     height: 40px;
@@ -314,6 +332,7 @@ html, body {
     margin-left: -2px;
     grid-column: 1/-1;
     justify-self: center;
+    
 }
 
 .github_icon {
@@ -321,6 +340,12 @@ html, body {
     width: auto;
     margin-top: 5px;
     margin-left: 3px;
+    grid-column: 1/-1;
+    justify-self: center;
+}
+.github_icon_top {
+    height: 40px;
+    width: auto;
     grid-column: 1/-1;
     justify-self: center;
 }
@@ -1573,7 +1598,7 @@ html, body {
     }
     .long_bio_text{
         margin-left: -45px;
-        margin-right: 0;
+        margin-right: 20px;
         text-indent: 20px;
         grid-row: 1/5;
     }
@@ -1597,6 +1622,15 @@ html, body {
     }
     #ray_bio{
         display: none;
+    }
+    .rk_holder{
+        padding: 0;
+        margin-top: 3px;
+       
+    }
+    .rk_text{
+        font-family: 'Righteous', sans-serif;
+        font-size: 40px;
     }
     .bio_no_show{
         grid-column: 3/-4;
@@ -2100,7 +2134,7 @@ html, body {
     display: none;
 }
 .blue_box_bio{
-    width: 95%;
+    width: 85%;
 }
 .red_box_bio{
     grid-column: 2/-4;
@@ -2722,6 +2756,13 @@ html, body {
     font-family: 'righteous';
     grid-column: -2/-1;
     grid-row: -2/-1;
+}
+.pdf_link {
+    font-family: 'righteous';
+    grid-column: 3/4;
+    grid-row: -2/-1;
+    margin-right: 15px;
+    text-align: end;
 }
 /*font-family: 'Quicksand', sans-serif;
 font-family: 'Righteous', sans-serif;
