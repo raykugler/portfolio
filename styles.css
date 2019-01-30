@@ -9,7 +9,7 @@ html, body {
 .container{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     overflow: hidden;
 }
 .name{
@@ -634,17 +634,17 @@ margin-top: 3px;
 }
 .red_line_four{
     grid-column: 8/9;
-    grid-row: 9/11;
-    height: 230%;
+    grid-row: 9/12;
+    height: 190%;
     width: 15px;
     background-color: #FF3B3F;
     margin-top: -10px;
     margin-left: -15px;
 }
-.blue_line_four{
+.blue_line_four {
     grid-column: 7/8;
-    grid-row: 9/11;
-    height: 230%;
+    grid-row: 9/12;
+    height: 190%;
     width: 5px;
     background-color: #6bdef7;
     z-index: 0;
@@ -712,6 +712,22 @@ margin-top: 3px;
 .blue_box_five{
     grid-column: 2/-2;
     grid-row: 12/14;
+    border: 5px solid #6bdef7;
+    border-radius: 14px;
+    width: 120%;
+    height: 192px;
+    margin-left: 15px;
+    background-color: #efefef;
+    margin-top: -50px;
+    z-index: 1;
+    display: grid;
+    grid-template-columns: 1fr 280px 1fr ;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    justify-self: center;
+}
+.blue_box_six{
+    grid-column: 2/-2;
+    grid-row: 13/15;
     border: 5px solid #6bdef7;
     border-radius: 14px;
     width: 120%;
@@ -865,7 +881,7 @@ margin-top: 3px;
 }
 .contact_red{
     grid-column: 3/-1;
-    grid-row: 13/14;
+    grid-row: 14/15;
     border: 15px solid #FF3B3F;
     border-radius: 7px;
     width: 100%;
@@ -900,7 +916,7 @@ margin-top: 3px;
 }
 .red_line_five{
     grid-column: 2/-2;
-    grid-row: 14/15;
+    grid-row: 15/16;
     height: 80%;
     width: 120%;
     border: 15px solid #FF3B3F;
@@ -911,7 +927,7 @@ margin-top: 3px;
 }
 .blue_line_five{
     grid-column: 2/-2;
-    grid-row: 14/15;
+    grid-row: 15/16;
     height: 80%;
     width: 110%;
     /* background-color: #6bdef7; */
@@ -925,7 +941,7 @@ margin-top: 3px;
 }
 .bottom_cover{
     grid-column: 8/-1;
-    grid-row: 13/16;
+    grid-row: 14/16;
     height: 55%;
     width: 170%;
     background-color: #efefef;
@@ -1283,8 +1299,8 @@ margin-top: 3px;
     }
     .red_line_four{
         grid-column: 2/-2;
-        grid-row: 7/8;
-        height: 160%;
+        grid-row: 7/9;
+        height: 120%;
         width: 27px;
         margin-top: 5px;
         margin-left: 17px;
@@ -1293,8 +1309,8 @@ margin-top: 3px;
     }
     .blue_line_four{
         grid-column: 1/-1;
-        grid-row: 7/8;
-        height: 150%;
+        grid-row: 7/9;
+        height: 120%;
         z-index: 2;
         justify-self: center;
         margin-left: 16px;
@@ -1302,8 +1318,8 @@ margin-top: 3px;
     }
     .gap_line{
         grid-column: 1/-1;
-        grid-row: 7/8;
-        height: 150%;
+        grid-row: 7/9;
+        height: 120%;
         width: 11px;
         background-color: #efefef;
         z-index: 0;
@@ -1458,6 +1474,16 @@ margin-top: 3px;
         align-self: center;
         padding-bottom: 10px;
     }
+    .blue_box_six{
+        grid-row: 9/10;
+        width: 50%;
+        height: 180px;
+        z-index: 5;
+        grid-template-columns: 5px 1fr 1fr 5px;
+        grid-template-rows: 1fr 1fr;
+        align-self: center;
+        padding-bottom: 10px;
+    }
     .loan_calc_title{
         font-family: 'Quicksand', sans-serif;
         color: rgb(46, 46, 46);
@@ -1482,28 +1508,28 @@ margin-top: 3px;
     }
     .contact_red{
         grid-column: 4/-2;
-        grid-row: 9/10;
+        grid-row: 10/11;
         margin-top: 170px;
     }
     .email{
         font-size: 1.2em;
     }
     .red_line_five{
-        grid-row: 8/10;
+        grid-row: 9/11;
         height: 60%;
         margin-top: 10px;
         margin-bottom: -40px;
         align-self: center;
     }
     .blue_line_five{
-        grid-row: 8/10;
+        grid-row: 9/11;
         height: 57%;
         width: 120%;
-        margin-top: 170px;
+        margin-top: 164px;
     }
     .bottom_cover{
         grid-column: 6/-1;
-        grid-row: 8/10;
+        grid-row: 9/10;
         margin-top: 128px;
     }
 }
@@ -1845,8 +1871,8 @@ margin-top: 3px;
     }
     .red_line_four{
         grid-column: 2/-2;
-        grid-row: 7/8;
-        height: 160%;
+        grid-row: 7/9;
+        height: 100%;
         width: 27px;
         margin-top: 5px;
         margin-left: 17px;
@@ -1855,8 +1881,8 @@ margin-top: 3px;
     }
     .blue_line_four{
         grid-column: 1/-1;
-        grid-row: 7/8;
-        height: 150%;
+        grid-row: 7/9;
+        height: 100%;
         z-index: 2;
         justify-self: center;
         margin-left: 16px;
@@ -1864,8 +1890,8 @@ margin-top: 3px;
     }
     .gap_line{
         grid-column: 1/-1;
-        grid-row: 7/8;
-        height: 150%;
+        grid-row: 7/9;
+        height: 100%;
         width: 11px;
         background-color: #efefef;
         z-index: 0;
@@ -2017,6 +2043,16 @@ margin-top: 3px;
         width: 50%;
         height: 150px;
         z-index: 5;
+        margin-top: -110px;
+        grid-template-columns: 5px 1fr 1fr 5px;
+        grid-template-rows: 1fr 1fr;
+        align-self: center;
+    }
+    .blue_box_six{
+        grid-row: 8/10;
+        width: 50%;
+        height: 150px;
+        z-index: 5;
         grid-template-columns: 5px 1fr 1fr 5px;
         grid-template-rows: 1fr 1fr;
         align-self: center;
@@ -2055,17 +2091,17 @@ margin-top: 3px;
     }
 
     .red_line_five{
-        grid-row: 8/10;
+        grid-row: 9/10;
         height: 60%;
         margin-top: 10px;
-        margin-bottom: -40px;
+        margin-bottom: 110px;
         align-self: center;
     }
     .blue_line_five{
-        grid-row: 8/10;
-        height: 57%;
+        grid-row: 9/10;
+        height: 55%;
         width: 120%;
-        margin-top: 170px;
+        margin-top: 23px;
     }
     .bottom_cover{
         grid-column: 6/-1;
