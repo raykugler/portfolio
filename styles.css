@@ -2591,7 +2591,7 @@ html, body {
     grid-row: 3/4;
     grid-column: 1/4;
     justify-self: start;
-    font-size: 3ex;
+    font-size: 18px;
     margin-top: -5px;
     margin-left: 38px;
 }
@@ -2600,7 +2600,7 @@ html, body {
     grid-column: 2/3;
     justify-self: start;
     font-family: 'righteous';
-    font-size: 4ex;
+    font-size: 27px;
     margin-bottom: 0px;
     margin-left: 31px;
     margin-top: 126px;
@@ -2707,7 +2707,7 @@ html, body {
     grid-column: 2/3;
     justify-self: start;
     font-family: 'righteous';
-    font-size: 4ex;
+    font-size: 25px;
     margin-bottom: 0px;
     margin-left: 31px;
     margin-top: 106px;
@@ -2718,7 +2718,7 @@ html, body {
         grid-column: 2/3;
         justify-self: start;
         font-family: 'righteous';
-        font-size: 4ex;
+        font-size: 25px;
         margin-bottom: 0px;
         margin-left: 31px;
         margin-top: 127px;
@@ -2745,14 +2745,14 @@ html, body {
 }
 .small_exp_header {
     font-family: 'righteous';
-    font-size: 3ex;
+    font-size: 20px;
     font-weight: bold;
     margin-left: 10px;
     margin-top: -30px;
 }
 .exp_text{
     font-family: 'quicksand';
-    font-size: 2ex;
+    font-size: 13px;
     /* font-weight: bolder; */
     margin-left: 10px;
     margin-top: -20px;
