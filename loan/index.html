@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./style.css">
+
+    
+    <title>Loan Calculator</title>
+</head>
+<body>
+    <div class='container'>
+        <h1 class='title'>Loan Calculator</h1>
+        
+        <form class='form'>
+                <h2 class='field_title' id='loan_amount_text'>Loan Amount</h2>
+                <input type="text" name="quantity" class='field' id='principal'>
+                <h3 class='solve_for one'>Solve for</h3>
+                <input type="checkbox" name="amount" value="amount" id='principal_check' class='check'><br>
+               
+                <h2 class='field_title' id='length_text'>Length of Loan</h2>
+                <input type="text" name="quantity" class='field' id='length'>
+                <h3 class='solve_for two'>Solve for</h3>
+                <input type="checkbox" name="length" value="length" id='length_check' class='check'><br>
+               
+                <h2 class='field_title' id='interest_rate_text'>Interest Rate</h2>
+                <input type="text" name="quantity" class='field' id='interest_rate'>
+                <h3 class='solve_for three'>Solve for</h3>
+                <input type="checkbox" name="interest" value="interest" id='interest_check' class='check'><br>
+               
+                <h2 class='field_title' id='monthly_payment_text'>Monthly Payment</h2>
+                <input type="text" name="quantity" class='field' id='monthly_payment'>
+                <h3 class='solve_for four'>Solve for</h3>
+                <input type="checkbox" name="monthly" value="monthly" id='monthly_check' class='check'><br>
+
+                <button class='submit_button' id='the_button' type="button">SOLVE</button>
+                <button class='reset_button' id='the_reset_button' type="button">RESET</button>
+              </form>
+              <div class='results'>
+                  <p id='principal_result_text' class='result_text'>Loan Amount:</p>
+                  <p id='principal_result' class='result_text'>????</p>
+                  <p id='length_result_text' class='result_text'>Length of Loan:</p>
+                  <p id='length_result' class='result_text'>????</p>
+                  <p id='interest_result_text' class='result_text'>Interest Rate:</p>
+                  <p id='interest_result' class='result_text'>????</p>
+                  <p id='monthly_result_text' class='result_text'>Monthly Payment:</p>
+                  <p id='monthly_result' class='result_text'>????</p>
+              </div>
+    </div>
+    
+</body>
+<script src="loanscript.js"></script>
+</html>
